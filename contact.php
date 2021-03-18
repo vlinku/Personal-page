@@ -31,19 +31,19 @@
     $errors = array();
     if (empty($_POST) === false) {      
         if (empty($_POST['nameInput'])) {
-            $errors['name_undefined'] = 'Prašome įvesti vardą.';
+            $errors['name_undefined'] = 'Please enter your name';
         }
         if (empty($_POST['emailInput'])) {
-            $errors['email_undefined'] = 'Prašome įvesti el. pašto adresą.';
+            $errors['email_undefined'] = 'Please enter your email address';
         }
         if (empty($_POST['messageInput'])) {
-            $errors['message_undefined'] = 'Prašome įvesti žinutę.';
+            $errors['message_undefined'] = 'Please write your message';
         }
         if (empty($_POST['subjectInput'])) {
-            $errors['subject_undefined'] = 'Prašome įvesti žinutės temą.';
+            $errors['subject_undefined'] = 'Please write the subject';
         }
         if (count($errors) === 0) {
-            echo "Žinutė išsiųsta sėkmingai!";   // sukurti, kad išsiuntus žinutę ivestų žalią laukelį, kad žinutė buvo išsiųsta sėkmingai
+            echo "Message successfully sent!";   // sukurti, kad išsiuntus žinutę ivestų žalią laukelį, kad žinutė buvo išsiųsta sėkmingai
         }
         if (count($errors)===0){
             $name = $_POST['nameInput'];
