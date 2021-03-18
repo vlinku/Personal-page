@@ -1,0 +1,42 @@
+h2 {
+	line-height: 0.5;
+}
+.Duona {
+	text-align: justify; 
+	font-weight: bold;
+	text-indent: 25px;
+	margin-right:400px;
+	font-family: Serif, sans-serif;
+}
+video {
+	border-radius: 5px;
+}
+.video{
+	text-align: center;
+	margin: 0 auto;
+	float: right;
+
+}
+object {
+	border-radius: 5% ;
+}
+	
+	#fonas {
+		background-image: url('http://free.wallpaperbackgrounds.com/food/bread/bread-6-30501.jpg');
+	} 
+
+	a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: lightgreen;
+}
+a:active {
+    background-color: brown;
+    }

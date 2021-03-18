@@ -1,0 +1,71 @@
+body{
+	background-image: url("http://www.erikablumenfeld.com/wp-content/uploads/2011/07/Background.jpg");
+}
+table{
+	border-collapse: collapse;
+	margin-top:50px;
+	margin-left:25px;
+	
+}
+
+.linijos img{
+	width:70px;
+	height:70px;
+	
+}
+
+h1 {
+	font-family:Serif, sans-serif;
+	text-align:center;
+font-weight: bold;
+color:#C23914;
+
+
+}
+
+.linijos{
+	border-style: double;
+	font-family:Serif, sans-serif;
+	font-size:18px;
+	font-style: italic;
+
+	 border-width: 3px;
+	 border-color:#FF8C00;
+	 color: 0E009B;
+	 font-weight: normal;
+	 text-align: center;
+	border-bottom-color: #7B9795;
+border-top-color:#7B9795;
+border-right-color:#0A1A9B;
+border-left-color:#0A1A9B;
+}
+
+.instrukcijos {
+list-style-type: upper-roman;
+font-family: Serif, sans-serif; 
+text-align: justify;
+}
+
+#spalva{
+	color: 4B5F8A;
+	font-weight: bold;
+}
+
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: lightgreen;
+}
+a:active {
+    background-color: brown;
+    }
+
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href='css/bootstrap.css' rel='stylesheet'>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="Contacts.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src='js/bootstrap.js'></script>
+	<title>Ačiū Visiems už puikią pradžią!!!</title>
+</head>
+
+<script type="text/javascript">
+
+	$(document).ready(function () {
+		var images = $('.pirmas img');
+		var index = 0;
+
+		$(images[index]).fadeIn(250);
+
+		setInterval(show, 3000);
+
+		function show() {
+			$(images[index]).fadeOut(250);
+			index++;
+			if (index == images.length) {
+				index = 0;
+			}
+			$(images[index]).delay(250).fadeIn(250);
+		}
+
+	});
+
+</script>
+
+<body id="override">
+	<div class="pirmas container">
+		<img src="photos/berliner.jpg">
+		<img src="photos/buns.jpg">
+		<img src="photos/cake.jpg">
+		<img src="photos/chelsea.jpg">
+		<img src="photos/croissant.jpg">
+	</div>
+	<div class="family container">
+
+		<div class="col-md-8">
+			<div class="family"><img
+					src="https://yt3.ggpht.com/-Imd5ASBlR6w/AAAAAAAAAAI/AAAAAAAAAAA/dtH7-4CH8cw/s900-c-k-no-rj-c0xffffff/photo.jpg" />
+				<p><b>Vilius</b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu massa eu orci
+					bibendum ullamcorper. Morbi scelerisque tortor lacus, sed placerat lacus venenatis ut. In pulvinar
+					lectus id turpis consectetur. </p> </a>
+			</div>
+		</div>
+
+		<!--	<form action="#">
+			<label for="Vardas">Jūsų Vardas:</label>
+			<input type="text" name="Vardas" id="Vardas" placeholder="Jūsų Vardas" required>
+			<label for="Pavarde"> Jūsų Pavardė:</label>
+			<input type="text" name="Pavarde" id="Pavarde" placeholder="Jūsų Pavardė" required>
+			<label for="email">El. pašto adresas:</label>
+			<input type="email" name="email" id="email" placeholder="El. pašto adresas" required>
+			<textarea name="zinutes_vieta" id="zinutes_vieta" cols="30" rows="10" placeholder="Rašykite žinutę čia:"
+				required></textarea>
+		</form>
+-->
+		<div class="grizti">
+			<a href="Index.html"> Grįžti atgal
+			</a>
+		</div>
+</body>
+
+</html>

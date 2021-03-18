@@ -1,0 +1,89 @@
+thead {
+	font-family:cursive;
+	color:#36648b;
+	text-align:left;
+}
+
+.bandeles{
+	font-family: Serif, sans-serif;
+	font-size: 25px;
+	color:#0088cc ;
+}
+.receptas{
+	font-family: Serif, sans-serif;
+	font-style: italic;
+	color: red;
+	border-style: groove;
+	 border-width: 4px;
+	 border-color:#ffdead;
+	 text-align: center;
+}
+
+.teslai{
+	font-family:Serif, sans-serif;
+	color: #0088cc;
+	border-style: groove;
+	 border-width: 4px;
+	 border-color:#ffdead;
+
+}
+
+body {
+	background-image: url("http://backgroundidea.info/wp-content/uploads/2015/03/light-color-background-tumblr-backgrounds-for-light-pink-background-tumblr-pic.jpg");
+}
+
+.lentele{
+	float: right;
+	border: 1px solid black;
+	border-collapse: collapse; 
+	display: inline-table;
+}
+
+.linijos img {
+	height:50px;
+	width:50px;
+}
+
+.linijos {
+	border-style: groove;
+	font-family:Serif, sans-serif;
+	font-size:12px;
+	 border-width: 4px;
+	 border-color:#ffdead;
+	 color: black;
+	 font-weight: normal;
+	}
+.centras {
+	text-align: center;
+}
+
+div {
+	text-decoration:none;
+	text-decoration-color: #cc0000; 
+	text-align:center;
+}
+
+.instrukcijos{ 
+	font-family: Serif, sans-serif; 
+	color:#0088cc; 
+	text-align: left;
+}
+
+hr{
+	clear: both;
+}
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: lightgreen;
+}
+a:active {
+    background-color: brown;
+    }

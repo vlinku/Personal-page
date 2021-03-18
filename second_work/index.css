@@ -1,0 +1,524 @@
+/* =====================================================
+GLOBAL
+==================================================== */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* =====================================================
+TYPOGRAPHY
+==================================================== */
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+h1,h2, h3,h4,h5, h6 {
+   font-family: 'Raleway', 'sans-serif';
+   font-weight: 700;
+}
+
+/* =====================================================
+NAVBAR
+==================================================== */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 10px 50px;
+    position: fixed;
+    background: white;
+    left: 0px;
+    right:0px;
+    top:0px;
+}
+
+nav h1{
+    font-family: 'raleway', sans-serif;
+    margin: 0px;
+    font-size: 22px;
+    
+}
+nav h1 a{ 
+    /* margin-left: 72px;   */
+    color:#222222 ;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    width: 73px;
+    height:19px;
+    margin-left: 62px;
+}
+
+nav ul li a {
+    color: #222;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size:12px;
+    letter-spacing: 1px;
+
+
+}
+nav ul li.active a{
+    color:#EB5757;
+}
+nav a{
+    text-decoration: none;
+    transition: 0.2s all;
+}
+
+nav a:hover {
+    color:#EB5757;
+}
+
+/* =====================================================
+HEADER
+==================================================== */
+header {
+    height: calc(130vh - 80px);  /*Koreguotas is 100vh*/
+    background-image: url('pictures/49d7bbb36792b9a824e3ed67078b2188.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:100px;
+}
+
+header .content {
+    max-width: 800px;
+    text-align: center;
+
+}
+
+header h1, header p {
+    color: white;
+    margin:0;
+}
+
+header h1 {
+    letter-spacing: 2px;
+    font-size:80px;
+    text-transform: uppercase;
+margin-bottom: 16px;
+}
+
+header p {
+
+    margin-bottom: 40px;
+    font-size:40px;
+}
+
+header .buttons a {
+    padding:15px 65px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border: 1px solid #EB5757;
+    
+}
+
+header .buttons a:first-child {
+    background-color:#EB5757;
+color: white;
+margin-right: 20px;
+}
+header .buttons a:last-child {
+    background-color: white;
+    color:#EB5757;
+}
+/* =====================================================
+RIBBON
+==================================================== */
+.ribbon {
+   
+    margin: 0px;
+    padding: 39px 0;
+    background-color: #EB5757;
+}
+
+.ribbon p {
+     max-width: 1200px; 
+    margin: 0 237px;
+    text-align: center;
+    line-height: 27px; 
+    font-size: 15px;
+    color: #FFF;
+}
+
+
+/* =====================================================
+ARTIST
+==================================================== */
+.artist {
+
+    margin: 0;
+    background: #E5E5E5;
+}
+.artist .atlikejai  {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.artist .atlikejai h2 {
+    margin: 0 auto;
+    color: #222;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-top: 59px;
+    padding-bottom: 19px;
+}
+
+.artist .atlikejai hr {
+    margin:0 auto;
+    width: 31px;
+    border: 5px solid #EB5757; 
+}
+.artist .atlikejai p  {
+text-align: center;
+    margin:0 auto;
+    color: #222;
+    line-height: 27.24px;
+    padding: 0px 380px;
+    padding-top: 19px
+    }
+
+    /* =====================================================
+ARTIST BLOCK
+==================================================== */
+   .artist .block { 
+       margin: 0 auto;
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       padding-top: 50px;
+       padding-bottom: 47px;
+       flex-wrap: wrap;
+       max-width: 1200px;
+   }
+
+   .artist .block .foto {
+      text-align: center;
+      width: 21%;
+      padding-bottom: 40px;
+
+   }
+
+   .artist .block .foto img {
+        width: 166px; 
+        height: 166px;
+        object-fit: cover;
+        border-radius: 50%;
+   }
+ 
+   .artist .block .foto h3 {
+       margin: 0;
+       padding-top:25px;
+       text-transform: uppercase;
+       font-size: 17px;
+       letter-spacing: 2px;
+       color: #222;
+   }
+
+   .artist .block .foto p {
+       color:#222;
+       margin:0 auto;
+       padding-top: 6px;
+       font-size: 11px;
+       width: 125px;
+    }
+    
+
+
+
+/* =====================================================
+GALLERY
+==================================================== */
+
+.gallery {
+    margin: 0;
+    background: rgba(235, 87, 87, 0.1);
+}
+
+.gallery .gallery-text  {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery .gallery-text  h2 {
+    margin: 0 auto;
+    color: #222;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-top: 59px;
+    padding-bottom: 19px;
+}
+
+.gallery .gallery-text hr {
+    margin:0 auto;
+    width: 31px;
+    border: 5px solid #EB5757; 
+}
+
+.gallery .gallery-text p  {
+    text-align: center;
+    margin:0 auto;
+    color: #222;
+    line-height: 27.24px;
+    padding: 0px 380px;
+    padding-top: 19px;
+    padding-bottom: 40px;
+    }
+
+
+
+/* =====================================================
+GALLERY PICTURES
+==================================================== */
+.gallery .gallery-pic {
+    margin: 0 auto;
+    padding: 0;
+    height: 557px;
+    width: 936px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 90px;
+}
+
+.gallery .gallery-pic img {
+    width: 173px;
+    height: 173px;
+    object-fit: cover;
+    padding: 7px;
+     }
+
+/* =====================================================
+TICKETS
+==================================================== */
+.tickets, .location {
+    margin: 0;
+    padding: 0;
+    background: #E5E5E5;
+}
+
+.tickets .tickets-text {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tickets  .tickets-text  h2{
+    margin: 0 auto;
+    color: #222;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-top: 59px;
+    padding-bottom: 19px;
+}
+
+.tickets .tickets-text hr {
+    margin:0 auto;
+    width: 31px;
+    border: 5px solid #EB5757; 
+}
+.tickets .tickets-text p  {
+text-align: center;
+    margin:0 auto;
+    color: #222;
+    line-height: 27.24px;
+    padding: 0px 380px;
+    padding-top: 19px;
+    padding-bottom: 40px;
+    }
+
+/* =====================================================
+TICKETS-BLOCKS
+==================================================== */
+.tickets-block {
+    margin:0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 108px;
+}
+
+.tickets-block .day-1 {
+    width: 313px;
+    height: 263px;
+    background:rgba(255, 255, 255, 1);
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 52px;
+}
+.tickets-block h3 {
+    margin: 0 auto;
+    color: #222;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+    padding-top: 23px;
+    padding-bottom: 20px;
+}
+
+.tickets-block hr {
+    margin:0 auto;
+    width: 310px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.tickets-block p {
+    font-size: 11px;
+    text-align: center;
+    margin: 0 auto;
+    width: 210px;
+    padding-top: 21px;
+}
+
+.tickets-block h4 {
+    color: rgba(34, 34, 34, 1);
+    font-size: 17px;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 20px;
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
+
+.tickets-block h4 span {
+    color: rgba(235, 87, 87, 1);
+    font-size: 18px;
+}
+
+.tickets-block .day-1 .buttons a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 10px;
+    letter-spacing: 1px;
+    background-color:#EB5757;
+    color: white;
+    padding: 8px 44px;
+}
+.tickets-block .day-1 .buttons {
+    padding-bottom: 27px;
+}
+/* =====================================================
+LOCATION
+==================================================== */
+
+.location {
+    margin: 0 auto;
+    padding: 0;
+    background: rgba(235,87,87,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 84px;
+
+}
+
+.location .location-text h2 {
+    margin: 0 auto;
+    color: #222;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-top: 59px;
+    padding-bottom: 19px;
+    text-align: center;
+}
+
+.location .location-text hr {
+    margin:0 auto;
+    width: 31px;
+    border: 5px solid #EB5757; 
+}
+
+.location .location-text p {
+text-align: center;
+    margin:0 auto;
+    color: #222;
+    line-height: 27.24px;
+    padding: 0px 380px;
+    padding-top: 19px;
+    padding-bottom: 40px;
+    }
+
+.map iframe {
+    width: 822px;
+    height:310px;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+/* =====================================================
+FOOTER
+==================================================== */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 10px 80px;
+    background: white;
+    left: 0px;
+    right:0px;
+    top:0px;
+}
+
+footer p { 
+    color:#222222;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    margin: 0;
+}
+
+
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    list-style-type: none;
+    height:19px;
+    margin-left: 40px;
+
+}
+
+footer ul li a {
+    color: #222;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size:12px;
+    letter-spacing: 1px;
+}
+
+
+footer a {
+    text-decoration: none;
+    transition: 0.2s all;
+}
+
+footer a:hover {
+    color:#EB5757;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href='css/bootstrap.css' rel='stylesheet'>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="Index.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src='js/bootstrap.js'></script>
+	<title>Bandelių receptai</title>
+
+</head>
+<header>
+	<h1 id="pavadinimas">
+		BANDELIŲ PROJEKTAS
+	</h1>
+</header>
+
+
+<body>
+	<div class="gallery container">
+		<img src="photos/berliner.jpg">
+		<img src="photos/buns.jpg">
+		<img src="photos/cake.jpg">
+		<img src="photos/chelsea.jpg">
+		<img src="photos/croissant.jpg">
+	</div>
+	<script type="text/javascript">
+
+		$(document).ready(function () {
+			let images = $('.gallery img');
+			let index = 0;
+
+			$(images[index]).fadeIn(1000);
+
+			setInterval(show, 5000);
+
+			function show() {
+				$(images[index]).fadeOut(1000);
+				index++;
+				if (index == images.length) {
+					index = 0;
+				}
+				$(images[index]).delay(200).fadeIn(1000);
+			}
+
+		});
+
+	</script>
+	<ul>
+
+		<li>
+			<div class="istorija"><a href="History.html">History of bread</a></div>
+		</li>
+		<br>
+		<li>
+			<div id="Receptai"><a href="Recipes.html">Recipes</a></div>
+		</li>
+		<br>
+		<li>
+			<div class="Susisiekti"><a href="Contacts.html">Contact</a></div>
+		</li>
+		<li>
+			<div class="button"><a href="../works.html">Grįžti atgal</a></div>
+		</li>
+	</ul>
+
+
+</body>
+
+</html>

@@ -1,0 +1,931 @@
+
+/*====================================================
+GLOBAL  
+======================================================*/
+
+
+body, html, header, footer, nav, main, h1,h2,h3,h4, .main  {
+  margin: 0;
+  padding: 0;
+max-width: 1349px;
+
+}
+
+
+/* =====================================================
+TYPOGRAPHY
+========================================================*/
+body {
+   font-family: 'Noto sans jp', 'Open Sans';
+   font-weight: 400;
+   font-size: 14px;
+   color: #555;
+}
+
+h1,h2, h3,h4,h5, h6 {
+  font-family: Ubuntu,'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color:#333;
+}
+text {
+   font-family: 'Noto sans jp', 'Open Sans';
+         font-size: 40px;
+}
+/*======================================================
+NAV
+========================================================*/
+
+header{
+   max-width: 1349px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   background:#F2F3F3;
+   position: fixed;
+   width: 100%;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   padding-left: 95px;
+   z-index: 1000;
+   box-sizing: border-box;
+  
+
+}
+
+header > h1 {
+   font-size: 40px;
+   letter-spacing: 1px;
+ 
+}
+
+nav {
+   
+   background: #2F4152;
+   display: inline-flex;
+   justify-content: space-evenly;
+   border-radius: 5px;
+   padding: 5px 0px ;
+   /* width: 60%; */
+   
+
+}
+
+nav > a {
+   color: white;
+   text-decoration: none;
+   border-right: 1px solid white;
+   text-transform: uppercase;
+   padding: 10px 45px;
+   letter-spacing: 2px;
+   transition: all 0.7s ease;
+   text-align: center;
+}
+
+nav > a:hover {
+   color: #0FBEF2;
+   
+}
+
+nav > a:last-child {
+   border: none;
+}
+
+/*======================================================
+                     M A I N
+========================================================*/
+
+.main {
+  padding-top: 200px;
+  height: auto;
+  background: url("foto/webb.png") ;
+}
+
+.about {
+   display: flex;
+   flex-direction: row;
+   padding-left: 95px;
+   align-items: center;
+   position: relative;
+   
+}
+
+.about::before{
+   position: absolute;
+   padding-top: 160px;
+   padding-bottom: 120px;
+   padding-right: 0px;
+   padding-left: 0px;
+   display: block;
+   content: '';
+   border-top: 3px solid #0FBEF2;
+   border-bottom: 3px solid #0FBEF2;
+   left: 33.5%;
+   right: 0;
+}
+
+/* ---------------------------------------- */
+
+.left_block {
+   display: flex;
+   flex-direction: column;
+}
+
+.parallelogram-1, .parallelogram-2 {
+   background: #2F4152;
+   width: 216px;
+   padding: 5px 0px;
+   transform: skew(-20deg);
+   margin-left: 100px;
+ }
+
+ .parallelogram-1 .about_me, .parallelogram-2 .personal_traits {
+   margin: 0; 
+   transform: skew(20deg);
+    color: #FFF;
+    padding-left: 10px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    text-transform: uppercase;
+ }
+
+
+
+
+.left_block > .personal_traits {
+   padding-top: 18px;
+}
+
+.personal {
+   padding-top: 20px;
+   display: flex;
+   flex-direction: row;
+}
+
+.personal_first p {
+   font-weight: 700;
+   padding-right: 10px;
+}
+.personal_first p, .personal_second p {
+   margin: 0px;
+   font-size: 20px;
+}
+.personal_second p:last-child {
+   font-size: 18px;
+}
+.icons {
+   display: flex;
+   justify-content: space-between;
+   width: 85%;
+   padding-top: 30px;
+   padding-bottom:30px;
+   z-index: 900;
+   
+   
+}
+
+.f, .i, .l, .g {
+   position: relative;
+   width: 50px;
+   transition: 0.3s ease;
+   left: 0;
+   bottom: 0;
+   border-radius: 12px;
+}
+
+.f:hover, .i:hover, .l:hover, .g:hover {
+  
+   box-shadow: -2px 2px 4px #2F4152;
+   left: 10px;
+   bottom: 10px;
+}
+
+
+/* ---------------------------------------- */
+
+.summary {
+ 
+   margin: 10px;
+   text-align: justify;
+    text-justify: inter-word;
+   
+
+    
+}
+
+.foto {
+   object-fit: cover;
+   width: 180px;
+   border: 4px solid #2F4152;
+   margin-left: 60px;
+   box-shadow: -4px 4px 10px grey;
+}
+
+ .summary span {
+
+    width: 70%;
+    font-size: 16px;
+    
+    
+ }
+
+
+/* ---------------------------------------- */
+
+.languages {
+   padding: 20px 0px;
+}
+.percent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 10px;
+  
+}
+
+.responsibility, .planning, .critical_thinking, .honesty{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   font-size: 22px;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+}
+
+   circle {
+      margin: 0px ;
+      padding: 0px;
+      stroke-width: 16;
+      stroke-opacity: 1;
+      fill: none;
+      transform: rotate(-90deg);
+      transform-origin: 50% 50%;
+      height: 400px;
+    }
+    
+    circle.stroke-grey {
+      stroke: #e0e4e4;
+    }
+    
+    circle.stroke-cyan-responsibility {
+      stroke: #2a80b9;
+      stroke-dasharray: 435,600;
+    }
+    circle.stroke-cyan-planning, circle.stroke-cyan-critical_thinking  {
+      stroke: #3598dc;
+      stroke-dasharray: 300,600;
+    }
+    circle.stroke-cyan-honesty {
+      stroke: #2a80b9;
+      stroke-dasharray: 390,600;
+    }
+    
+    /*  fill: keicia svg elemento spalva(kaip color:  ) */
+    /* transform:translate(x,y reiksmes) padeda pozicinuoti svg elementus */
+ 
+/*======================================================
+FOOTER
+========================================================*/
+   footer { background: #2F4152;
+   color: #FFF;
+   }
+   .experience {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding-left: 95px;
+      padding-top: 50px;
+   }
+
+   .line {
+      border: 1px solid #0FBEF2;
+      height: 0.1px;
+      width: 100%;
+      float: right;
+      margin-left: 100px;
+   }
+
+   .experience p {
+      margin: 0;
+      text-transform: uppercase;
+      background: #3699dc;
+      width: 120px;
+      padding: 5px;
+      border-radius: 5px;
+
+   }
+
+
+   .job {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: row;
+      padding-left: 95px;
+      justify-content: flex-start;
+
+   }
+
+
+   ul {
+      margin: 0;
+      padding: 0;
+      width: 40%;
+   }
+   .years {
+      
+      background: #3699dc;
+      padding: 0px 10px;
+      border-radius: 5px;
+
+   }
+
+
+
+   .li_first {
+     /* width: 70%; */
+      list-style-image: url('foto/bullet.png');
+      padding-left: 5px;
+
+   }
+
+   .li_second  {
+      list-style-type: none;
+      padding-left: 95px;
+      width: 85%;
+      text-align: justify;
+   }
+
+   .technologist {
+      margin-bottom: 0;
+   }
+
+   #last {
+      margin: 0;
+      padding-bottom: 50px;
+      margin-top: 14px;
+   }
+/*======================================================
+                  W O R K S
+========================================================*/
+   .darbas {
+      height: auto;
+      display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center; 
+    padding-bottom: 20px;
+   }
+   .darbas h1 {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      text-align: center;
+
+   } 
+
+   .darbas1 img, .darbas2 img, .darbas3 img, .darbas4 img {
+      border-radius: 15px;
+      width: 300px;
+      position: relative;
+      transition: 0.7s ease;
+      left: 0;
+      bottom: 0;
+      border-radius: 10px;
+      border: 1px solid #9eb2c5;
+      height: 140px;
+      
+      
+   }
+
+   .darbas1 img:hover, 
+   .darbas2 img:hover, 
+   .darbas3 img:hover, 
+   .darbas4 img:hover  {
+     
+      box-shadow: -3px 3px 5px #2F4152;
+      left: 10px;
+      bottom: 10px;
+   }
+
+.darbas1, .darbas2, .darbas3, .darbas4 {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-image: repeating-linear-gradient(131deg, #9eb2c5, #9eb2c5 1.2px, transparent 10px, transparent 11.08px, #9eb2c5 19px), repeating-linear-gradient(221deg, #9eb2c5, #9eb2c5 1.2px, transparent 10px, transparent 11.08px, #9eb2c5 19px), repeating-linear-gradient(-49deg, #9eb2c5, #9eb2c5 1.2px, transparent 10px, transparent 11.08px, #9eb2c5 19px), repeating-linear-gradient(41deg, #9eb2c5, #9eb2c5 1.2px, transparent 10px, transparent 11.08px, #9eb2c5 19px);
+   background-size: 5px 100%, 100% 5px, 5px 100% , 100% 5px;
+   background-position: 0 0, 0 0, 100% 0, 0 100%;
+   background-repeat: no-repeat;
+   width: 45%;
+   padding: 10px;
+   margin: 10px;
+}
+   
+.darbas > p {
+   width: 100%;
+}
+
+/*======================================================
+                  G A M E
+======================================================*/
+
+
+.game {
+   margin-top: 200px;
+   height: auto;
+  
+   box-sizing: border-box;
+   background-color: #292c34;
+   
+}
+
+.game-h1 {
+   background: white;
+}
+
+.game h1 {
+   text-align: center;
+   padding-bottom: 20px;
+   text-transform: uppercase;
+   font-size: 40px;
+}
+.score-board {
+   position: relative;
+   margin: 20px auto;
+   border: 3px solid white;
+   border-radius: 4px;
+   width: 200px;
+   color: white;
+   font-size: 40px;
+   text-align: center;
+   padding: 15px 20px;
+}
+
+.badge {
+   background-color: #E25840;
+   font-size: 14px;
+   padding: 2px 10px;
+
+}
+
+#user-label {
+   position: absolute;
+   top: 30px;
+   left: -25px;
+}
+#computer-label {
+   position: absolute;
+   top: 30px;
+   right: -30px;
+}
+
+.result {
+   font-size: 40px;
+   color: white;
+}
+
+.result p {
+   text-align: center;
+   font-weight: 700;
+}
+
+.choices {
+   text-align: center;
+}
+
+.choice {
+   display: inline-block;
+   width: 100px;
+   border: 4px solid white;
+   border-radius: 50%;
+   padding: 10px;
+   margin: 0 20px;
+   transition: all 0.3s ease;
+
+}
+
+.choice:hover {
+   cursor: pointer;
+   background: #24272E;
+}
+
+.choice img {
+   width: 80px;
+}
+
+#action-message {
+   margin: 0;
+   text-align: center;
+   color: white;
+   font-weight: 700;
+   font-size: 20px;
+   margin-top: 20px;
+   padding-bottom: 20px;
+}
+
+.green-glow {
+   border: 4px solid #4dcc7d;
+   box-shadow: 0 0 10px #31b43a;
+}
+
+.red-glow {
+   border: 4px solid #fc121b;
+   box-shadow: 0 0 10px #d01115;
+}
+
+.grey-glow {
+   border: 4px solid #464647;
+   box-shadow: 0 0 10px #25292b;
+}
+
+/*======================================================
+                  C O N T A C T
+======================================================*/
+
+.sms {
+   display: flex;
+   justify-content: center;
+  align-items: center;
+}
+
+.btn-primary {
+   margin-bottom: 20px;
+}
+
+.li_second {
+   margin-top: 14px;
+}
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+                  R E S O L U T I O N    1 1 0 0 P X
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+@media only screen and (max-width: 1100px){
+
+   .about {
+      flex-wrap: wrap;
+      
+   }
+   .about::before{
+     
+      padding-top: 200px;
+      padding-bottom: 200px;
+      width: 0%;
+   }
+
+   .darbas1, .darbas2, .darbas3, .darbas4 {
+   width: 40%;
+   }
+
+}
+
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+                  R E S O L U T I O N    1 0 0 0 P X
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+@media only screen and (max-width: 1000px){
+
+   .about {
+      flex-wrap: wrap;
+   }
+   .about::before{
+    
+      padding-top: 226px;
+      padding-bottom: 200px;
+     
+   }
+
+}
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+                  R E S O L U T I O N    8 7 0 P X
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+@media only screen and (max-width: 870px){
+
+   .about {
+      flex-wrap: wrap;
+   }
+   .about::before{
+     
+      padding-top: 242px;
+      padding-bottom: 205px;
+     
+   }
+
+}
+
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+                  R E S O L U T I O N    8 0 0 P X
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+@media only screen and (max-width: 800px){
+
+
+   header {
+      align-items: flex-start;
+      padding-left: 20px;
+   }
+   
+   nav > a {
+     
+      padding: 10px 25px;
+     
+   }
+
+   .about {
+      padding-left: 20px;
+   }
+
+  
+
+   .about::before{
+      width: 0%;
+   }
+   
+      .foto {
+         width: 180px;
+         box-shadow: -4px 4px 10px grey;
+         margin-left: 20px;
+         
+      }
+
+     .parallelogram-1, .parallelogram-2 {
+         margin-left: 20px;
+      }
+     
+       .percent {
+          flex-wrap: wrap;
+       }
+
+      .experience, .job, .job>ul, .li_first{
+         padding-left: 20px;
+      }
+
+     .li_second {
+         width: auto;
+         padding: 0 20px;
+      }
+
+      .summary {
+         padding-bottom: 30px;
+      }
+      
+      .summary span {
+         padding-left: 0px;
+      }
+
+      .darbas1 h1, .darbas2 h1, .darbas3 h1, .darbas4 h1 {
+         font-size: 16px;
+      }
+
+      .darbas1 img, .darbas2 img, .darbas3 img, .darbas4 img {
+         width: 240px;
+      }
+
+
+
+   }
+
+
+
+  /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+                  R E S O L U T I O N    6 0 0 P X
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+@media only screen and (max-width: 600px){
+
+   header {
+      align-items: center;
+      padding: 0;
+      padding-bottom: 10px;
+
+   }
+
+.about {
+   padding-left: 20px;
+}
+.li_second {
+   width: auto;
+
+}
+
+.parallelogram-1, .parallelogram-2 {
+  
+   margin-left: 180px;
+   text-align: center;
+}
+
+
+
+.summary span {
+   padding-left: 0px;
+}
+
+.languages {
+
+   padding-top: 0px ;
+}
+
+.foto {
+   
+   width: 120px;
+   border: 2px solid #2F4152;
+}
+
+.darbas1 h1, .darbas2 h1, .darbas3 h1, .darbas4 h1 {
+   font-size: 14px;
+   letter-spacing: 0px;
+}
+
+.darbas1 p, .darbas2 p, .darbas3 p, .darbas4 p {
+   font-size: 10px;
+}
+
+.darbas1 img, .darbas2 img, .darbas3 img, .darbas4 img {
+   width: 200px;
+   height: 110px;
+}
+
+}
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+                  R E S O L U T I O N    5 0 0 P X
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+@media only screen and (max-width: 500px){
+
+   .main {
+      padding-top: 150px;
+      
+   }
+
+   header > h1 {
+      font-size: 30px;
+      letter-spacing: 0px;
+    
+   }
+   .f, .i, .l, .g {
+      margin-left: 5px;
+   }
+
+   
+
+   .foto {
+      margin-left: 10px;
+      margin-right: 5px;
+   }
+
+.game {
+   margin-top: 150px;
+}
+  nav {
+     padding: 0;
+
+  } 
+
+  nav > a {
+     padding: 10px 10px;
+  }
+
+ 
+
+.personal_first p, .personal_second p, .personal_second:last-child p {
+
+      font-size: 14px;
+}
+
+.li_first {
+   width: 120%;
+
+}
+
+.years {
+   margin-left: 50px;
+}
+
+.parallelogram-1, .parallelogram-2 {
+  
+   margin-left: 125px;
+   text-align: center;
+  
+}
+
+.parallelogram-1> .about_me , 
+.parallelogram-2 > .personal_traits {
+  
+   font-size: 15px;
+  
+}
+
+.darbas1 h1, .darbas2 h1, .darbas3 h1, .darbas4 h1 {
+   font-size: 12px;
+   letter-spacing: 0px;
+}
+
+.darbas1 p, .darbas2 p, .darbas3 p, .darbas4 p {
+   font-size: 9px;
+}
+
+.darbas1 img, .darbas2 img, .darbas3 img, .darbas4 img {
+   width: 150px;
+   height: 70px;
+}
+
+}
+
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+                  R E S O L U T I O N    4 0 0 P X
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+@media only screen and (max-width: 400px){
+
+.main {
+
+   padding-top: 90px;
+}
+
+.name {
+   font-size: 20px;
+}
+
+.position {
+   font-size: 10px;
+}
+   nav {
+      align-items: center;
+      
+   }
+
+   nav  a {
+      padding: 8px;
+      font-size: 10px;
+   }
+
+   .parallelogram-1, .parallelogram-2 {
+  
+      margin-left: 150px;
+      text-align: center;
+      width: 100px;
+   }
+   .parallelogram-2 .personal_traits {
+      padding-left: 7px;
+   }
+
+   .f, .i, .l, .g {
+      width: 40px;
+      border-radius: 8px;
+   }
+
+   .responsibility, .planning, .critical_thinking, .honesty {
+      font-size: 16px;
+      margin: 5px 0px ;
+   }
+
+.years {
+   width:25%;
+}
+
+.darbas1 img, .darbas2 img, .darbas3 img, .darbas4 img {
+   width: 100px;
+   height: 50px;
+}
+
+.game {
+   margin-top: 100px;
+}
+
+.game h1 {
+   font-size: 30px;
+   padding-bottom: 0px;
+}
+
+.score-board {
+   margin: 10px auto;
+}
+
+.result {
+   font-size: 25px;
+}
+
+.result p {
+   font-size: 17px;
+   margin: 5px auto;
+}
+
+
+
+.choice {
+
+   width: 15%;
+   margin: 0px 10px;
+
+}
+
+.choice img {
+   width: 80%;
+}
+
+#action-message {
+   margin-top: 10px;
+   padding-bottom: 10px;
+}
+
+}

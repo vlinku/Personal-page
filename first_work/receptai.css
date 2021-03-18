@@ -1,0 +1,76 @@
+.kruasanai{
+	text-indent:70px;
+	text-align:justify;
+	font-size: 20px;
+		font-family: Serif, Cursive, Helvetica, sans-serif;
+		font-style: italic;
+		margin-left: 20px;
+		margin-top: 50px;
+		color: #FFC300;
+		margin-right:100px;
+		text-indent: 50px;
+		text-align:justify;
+}
+.varske{
+	font-size: 20px;
+		font-family: Serif, Cursive, Helvetica, sans-serif;
+		font-style: italic;
+		margin-left: 20px;
+		margin-top: 50px;
+		color: #FFC300;
+		margin-right:100px;
+		text-indent: 50px;
+		text-align:justify;
+}
+.cinamonas{
+	font-size: 20px;
+		font-family: Serif, Cursive, Helvetica, sans-serif;
+		font-style: italic;
+		margin-left: 20px;
+		margin-top: 50px;
+		color: #FFC300;
+		margin-right:100px;
+		text-indent: 50px;
+		text-align:justify;
+}
+
+object {
+
+	width: 300px;
+	height: 300px;
+	border-radius: 5%;
+	float: right;
+	margin-left: 50px;
+	
+}
+a:link {
+    font-size: 25px;
+    color:#FFC300;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: lightgreen;
+}
+a:active {
+    background-color: brown;
+    }
+
+    #fonas{
+		background-image: url('photos/whet.jpeg');
+		background-size: cover;
+		background-attachment: fixed;
+		display: flex;
+		flex-direction: column;
+		
+    }
+
+.grizti {
+	margin-left:70px;
+	font-size: 30px;
+
+}

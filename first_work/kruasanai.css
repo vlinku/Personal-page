@@ -1,0 +1,65 @@
+#fonas {
+	background-image: url("http://www.bluitgroup.com/wp-content/uploads/2015/11/plain-light-color-for-guest-background.jpg");
+}
+.lentele{
+	margin-left:50px;
+	margin-top:50px;
+}
+
+.centras{ text-align: center;
+
+}
+
+.receptas {
+	float: right;
+	border: 1px solid black;
+	border-collapse: collapse; 
+	display: inline-table;
+	
+}
+
+.linijos img {
+	height: 100px;
+	width: 100px;
+	border-radius:15%;
+	border: 2px solid;
+	color: #A0522D;
+}
+.linijos{
+	border-style: inset;
+	font-family:Serif, sans-serif;
+	font-size:14px;
+	 border-width: 2px;
+	 border-color:#FF8C00;
+	 color: black;
+	 font-weight: normal;
+	 text-align: center;
+}
+.rageliai{
+	border-style: inset;
+	font-family:Serif, sans-serif;
+	font-size:12px;
+	 border-width: 2px;
+	 border-color:#FF8C00;
+	 color: black;
+	 font-weight: normal;
+	 text-align: center;
+}
+
+
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: lightgreen;
+}
+a:active {
+    background-color: brown;
+    }

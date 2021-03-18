@@ -1,0 +1,59 @@
+.pirmas img {
+			position: absolute;
+			display: none;
+			margin-left: 800px; margin-top: 100px;
+			height: 400px; 
+	width: 400px; 
+	border-radius: 30%;
+	border: solid 4px;
+	border-right-color: #ff7f50;
+	border-bottom-color: #deb887;
+	float: right;
+	border-top-color: #deb887;
+	border-left-color: #ff7f50;
+	clear: both;
+		}
+
+
+.family img {
+	position: relative;
+		margin-left: 20px;
+		height: 150px; 
+	width: 150px; 
+	border-radius: 100%;
+	border: 4px solid; 
+	border-color: #8a2be2; 
+		float: left;	
+		display: block;
+			}
+		
+
+.family p {
+	display: relative;
+	margin-top: 100px;
+	text-align: justify;
+	font-family: Serif, sans-serif;
+	font-size: 17px;
+	}
+
+#override {
+       background-image: url("https://wallpaperscraft.com/image/color_surface_light_background_50561_2048x1152.jpg");
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: lightgreen;
+}
+a:active {
+    background-color: brown;
+	}
+	
+	
