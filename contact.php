@@ -43,14 +43,17 @@
             $errors['subject_undefined'] = 'Please write the subject';
         }
         if (count($errors) === 0) {
-            echo "Message successfully sent!";   // sukurti, kad išsiuntus žinutę ivestų žalią laukelį, kad žinutė buvo išsiųsta sėkmingai
+              echo '
+              <p class="alert alert-success alert-dismissible fade show message_success" role="alert" >Message sent successfully!
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </p>
+              '; 
         }
         if (count($errors)===0){
             $name = $_POST['nameInput'];
             $email = $_POST['emailInput'];
             $topic = $_POST['subjectInput'];
             $message = $_POST['messageInput'];
-
     
          $additionalInfo = 'From: ' . $name . ' <' . $email . '>' . "\n";
     
@@ -110,8 +113,11 @@
                                     }
                                     ?>
                                 </div>
-                                <button type ="submit" class="btn btn-primary">Send message</button>       
-                                </form>
+                                <button type ="submit" class="btn btn-primary">Send message</button>  
+                            </form>
+                           
+                                     
+                                
                         </div>
                     </div>
                 </div>

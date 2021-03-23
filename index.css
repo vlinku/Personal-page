@@ -553,6 +553,31 @@ FOOTER
 .li_second {
    margin-top: 14px;
 }
+
+.message_success {
+   font-family: 'Noto sans jp', 'Open Sans';
+   font-size: 20px;
+   color: #1185d3;
+   width: 40%;
+   text-align: center;
+   margin:0px;
+   left: 30%;
+}
+
+.alert-dismissible .btn-close {
+  top: 10%;
+  right:1%;
+   padding: 0px;
+   font-size: 10px;
+}
+
+
+
+.alert-success {
+   
+   padding: 2px;
+   padding-right: 20px;
+}
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
                   R E S O L U T I O N    1 1 0 0 P X
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
@@ -682,7 +707,11 @@ FOOTER
          width: 240px;
       }
 
-
+      .message_success {
+        
+         font-size: 15px;
+        
+      }
 
    }
 
@@ -744,7 +773,11 @@ FOOTER
    width: 200px;
    height: 110px;
 }
-
+.message_success {
+        
+   font-size: 10px;
+  
+}
 }
 
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -927,5 +960,9 @@ FOOTER
    margin-top: 10px;
    padding-bottom: 10px;
 }
-
+.message_success {
+        
+   font-size: 8px;
+  
+}
 }
