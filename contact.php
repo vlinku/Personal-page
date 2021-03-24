@@ -32,6 +32,7 @@
     if (empty($_POST) === false) {      
         if (empty($_POST['nameInput'])) {
             $errors['name_undefined'] = 'Please enter your name';
+            
         }
         if (empty($_POST['emailInput'])) {
             $errors['email_undefined'] = 'Please enter your email address';
@@ -44,19 +45,30 @@
         }
         if (count($errors) === 0) {
               echo '
-              <p class="alert alert-success alert-dismissible fade show message_success" role="alert" >Message sent successfully!
+              <p class="alert alert-success alert-dismissible fade show message_success" role="alert" >
+              Message sent successfully!
               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
               </p>
               '; 
         }
+
+
         if (count($errors)===0){
+            
             $name = $_POST['nameInput'];
-            $email = $_POST['emailInput'];
+            $email = $_POST['emailInput'];   
+            $clean_email ="";  
+            if ( filter_var($email,FILTER_VALIDATE_EMAIL)) {
+            $clean_email = filter_var($email,FILTER_SANITIZE_EMAIL);
+            }
+
             $topic = $_POST['subjectInput'];
             $message = $_POST['messageInput'];
     
-         $additionalInfo = 'From: ' . $name . ' <' . $email . '>' . "\n";
-    
+
+            
+         $additionalInfo = 'From: ' . $name . ' <' . $clean_email . '>' . "\n";
+        
          $sentTo = 'vilius.linkunaitis@gmail.com';
          mail($sentTo, $topic, $message, $additionalInfo);
 
@@ -70,8 +82,8 @@
                         <div class="col">
                             <form action="contact.php" method = "post">
                                 <div class="mb-3">
-                                    <label for="nameInput" class="form-label "> Your Name</label>
-                                    <input type="text" class = "form-control <?php echo(isset($errors['name_undefined'])) ? 'is-invalid' : ''; ?>" id = "nameInput" name = "nameInput">
+                                    <label for="nameInput" class="form-label" > Your Name</label>
+                                    <input type="text" class = "form-control <?php echo(isset($errors['name_undefined'])) ? 'is-invalid' : ''; ?>"  minlength ="3" maxlength = "30" id = "nameInput" name = "nameInput">
                                     <?php
                                     if (isset ($errors['name_undefined'])){
                                         echo '<div class="invalid-feedback">';
@@ -82,7 +94,7 @@
                                 </div>
                                 <div class="mb-3">
                                     <label for="emailInput" class="form-label"> Your email address</label>
-                                    <input type="email" class = "form-control <?php echo(isset($errors['email_undefined'])) ? 'is-invalid' : ''; ?>" id = "emailInput" name = "emailInput">
+                                    <input type="email" class = "form-control <?php echo(isset($errors['email_undefined'])) ? 'is-invalid' : ''; ?>" minlength ="6" maxlength = "50" id = "emailInput" name = "emailInput">
                                     <?php
                                     if (isset ($errors['email_undefined'])){
                                         echo '<div class="invalid-feedback">';
@@ -93,7 +105,7 @@
                                 </div>
                                 <div class="mb-3">
                                     <label for="subjectInput" class="form-label "> Message subject</label>
-                                    <input type="text" class = "form-control <?php echo(isset($errors['subject_undefined'])) ? 'is-invalid' : ''; ?>" id = "subjectInput" name = "subjectInput">
+                                    <input type="text" class = "form-control <?php echo(isset($errors['subject_undefined'])) ? 'is-invalid' : ''; ?>" minlength ="3" maxlength = "50" id = "subjectInput" name = "subjectInput">
                                     <?php
                                     if (isset ($errors['subject_undefined'])){
                                         echo '<div class="invalid-feedback">';
@@ -104,7 +116,7 @@
                                 </div>
                                 <div class="mb-3">
                                     <label for="messageInput" class="form-label"> Your message</label>
-                                    <textarea class = "form-control <?php echo(isset($errors['message_undefined'])) ? 'is-invalid' : ''; ?>" id = "messageInput" name = "messageInput"></textarea>
+                                    <textarea class = "form-control <?php echo(isset($errors['message_undefined'])) ? 'is-invalid' : ''; ?>" maxlength = "500" id = "messageInput" name = "messageInput"></textarea>
                                     <?php
                                     if (isset ($errors['message_undefined'])){
                                         echo '<div class="invalid-feedback">';
